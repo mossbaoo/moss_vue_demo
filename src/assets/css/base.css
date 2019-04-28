@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background: #F5F5F5;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+div,
+a,
+span {
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

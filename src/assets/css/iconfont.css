@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1161420 */
+  src: url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.eot');
+  src: url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1161420_08yxoiwa73qu.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-you:before {
+  content: "\e603";
+}
+
+.icon-kefu:before {
+  content: "\e6f0";
+}
+
+.icon-editor:before {
+  content: "\e6f5";
+}
+
+.icon-home:before {
+  content: "\e702";
+}
+
+.icon-people:before {
+  content: "\e715";
+}
+
+.icon-gongsi:before {
+  content: "\e602";
+}
+
+.icon-sanjiaoxing:before {
+  content: "\e600";
+}
+
+.icon-jinru:before {
+  content: "\e661";
+}
+
+.icon-gouxuan:before {
+  content: "\e63c";
+}
+
