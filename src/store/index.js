@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {host} from '../config';
  
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
-    host: 'https://xiaoertong.bangju.com',
+    host: host,
     access_token: '',
   },
   mutations: {

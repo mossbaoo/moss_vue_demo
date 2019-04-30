@@ -1,6 +1,7 @@
 import qs from 'qs'
 import axios from 'axios'
 import {Dialog, Toast} from 'vant'
+import {redirect} from '../config';
 
 let loading = null; // 加载的对象
 
@@ -29,9 +30,11 @@ axios.interceptors.response.use(response => {
 
     return response
 }, error => {
+    console.log(error)
     Toast.clear(loading)    // 先关闭加载
 
     let [response,message] = [error.response,'服务端错误'];
+    console.log(response)
     switch (response.status) {
         case 400: message = '请求错误';         break;
         case 401: message = '未授权，请登录';   break;
@@ -50,7 +53,7 @@ axios.interceptors.response.use(response => {
     // 弹框提示错误
     Dialog.alert({title: '提示',message: message}).then(()=>{
         if(response.status == '401'){   // 处理未登录~
-            window.location.href = 'https://xiaoertong.bangju.com/third/connect/wechat?state=/';
+            window.location.href = redirect;
         }
     });
     return Promise.resolve(response)

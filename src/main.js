@@ -5,11 +5,12 @@ import App from './App'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+import {host} from './config';
 
 // 导入rem.js
 import '@/utils/rem'
 
-axios.defaults.baseURL = "http://xiaoertong.bangju.com";
+axios.defaults.baseURL = host;
 Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false
